@@ -81,6 +81,49 @@ header nav ul {
     box-shadow: 10px 10px 10px black;
 }
 
+/**********-----for hover mid img----**********/
+
+
+/* Hover effect */
+
+#desmid {
+    transition: filter 0.3s;
+    /* Add a smooth transition effect */
+}
+
+#pormid {
+    transition: filter 0.3s;
+    /* Add a smooth transition effect */
+}
+
+.frontposition:hover img {
+    filter: grayscale(100%);
+    /* Desaturate the image on hover */
+}
+
+ .hovpos {
+    position: absolute;
+    /* top: 50%; */
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    font-size: 50px;
+    font-weight: bold;
+    color: #851313;
+    /* Text color */
+    opacity: 0;
+    /* Initially hide the text */
+    transition: opacity 0.3s;
+    /* Add a smooth transition effect */
+}
+
+.frontposition:hover .hovpos p {
+    opacity: 1 ;
+    /* Show the text on hover */
+}
+
+/**********----- END for hover mid img----**********/
+
+
 .leftimg {
     float: left;
     display: flex;
@@ -142,7 +185,6 @@ header nav ul {
 
 
 
-#pormid {}
 
 #pormid {
     height: 400px;
@@ -201,5 +243,27 @@ header nav ul {
 
 .cont {
     background-image: linear-gradient(rgb(100, 99, 99), rgb(232, 232, 232));
-    height: 850px;
+    height: 700px;
+    padding-top: 30px;
+}
+
+.social-media {
+    padding: 30px 20px;
+    padding-top: 60px;
+    padding-bottom: 2px;
+    align-items: center;
+    text-align: center;
+    margin: 100px 20px;
+
+}
+
+.social-media a {
+    font-size: 18em;
+    text-decoration: none;
+    padding: 0px 60px;
+    color: rgba(27, 20, 20, 0.676);
+}
+
+.social-media a i:hover {
+    color: rgba(27, 20, 20, 0.928);
 }
