@@ -16,13 +16,16 @@ header nav a {
 } */
 .navbar {
     float: right;
+    right: 0px;
     text-align: center;
     height: 75px;
+    position: fixed;
     width: 50%;
     background-color: black;
     padding: 10px 5px;
     border-radius: 0px 0px 0px 30px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    z-index: 99;
 }
 
 header nav ul {
@@ -84,16 +87,18 @@ header nav ul {
 /**********-----for hover mid img----**********/
 
 
-/* Hover effect */
+
 
 #desmid {
     transition: filter 0.3s;
     /* Add a smooth transition effect */
+    position: relative;
 }
 
 #pormid {
     transition: filter 0.3s;
     /* Add a smooth transition effect */
+    position: relative;
 }
 
 .frontposition:hover img {
@@ -101,7 +106,7 @@ header nav ul {
     /* Desaturate the image on hover */
 }
 
- .hovpos {
+.hovpos {
     position: absolute;
     /* top: 50%; */
     /* left: 50%; */
@@ -114,10 +119,22 @@ header nav ul {
     /* Initially hide the text */
     transition: opacity 0.3s;
     /* Add a smooth transition effect */
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Adjust the background color and opacity as needed */
+    color: #fff;
+    /* Text color */
+    padding: 10px;
+    /* Adjust padding as needed */
+    opacity: 0;
+    /* Initially hidden */
+    transition: opacity 0.3s;
+    /* Fade-in transition effect */
 }
 
 .frontposition:hover .hovpos p {
-    opacity: 1 ;
+    opacity: 1;
     /* Show the text on hover */
 }
 
