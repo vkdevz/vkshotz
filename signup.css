@@ -100,7 +100,8 @@ input[type="password"] {
 @media only screen and (max-width: 450px)
 {
 body{
-background-image: url(images/portraits/09.jpg);
+/* background-image: url(images/portraits/09.jpg); */
+background: #b5b5b5;
 background-size: cover;
 
 }
@@ -110,7 +111,8 @@ background-size: cover;
 }
 
 .right1sec {
-    background-image:url(images/portraits/013.jpg) ;
+    /* background-image:url(images/portraits/013.jpg) ; */
+    background:   #c8c8c8 ;
     background-size: cover;
     margin-top: -60px;
     padding-top: 30px;
