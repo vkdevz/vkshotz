@@ -17,7 +17,7 @@
         }
 
         body {
-            background-color: rgb(128, 128, 128);
+            background-color: #d3d3d3;
             color: black;
             font-family: 'Poppins', Arial, sans-serif;
         }
@@ -27,15 +27,15 @@
             justify-content: space-around;
             align-items: center;
             height: 150px;
-            background-color: #1e1e1e;
+            background-color: #d3d3d3;
             text-decoration: none;
 
         }
 
-        header nav a{
-    text-decoration: none;
-    color: #f2f2f2;
-}
+        header nav a {
+            text-decoration: none;
+            color: rgb(74, 44, 31);
+        }
 
         header nav ul {
             font-size: 1.5em;
@@ -99,7 +99,7 @@
 
         .heading {
             font-size: 40px;
-            background-color: hsl(0, 0%, 47%);
+            background-color: #d3d3d3;
             color: rgb(73, 34, 34);
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             margin-top: 100px;
@@ -109,10 +109,10 @@
 
         }
 
-        .bodyint{
+        .bodyint {
             /* border: 2px solid red; */
-            font-size: 2em;
-            padding: 110px 90px;
+            font-size: 1em;
+            padding: 10px 30px;
             text-align: justify;
         }
 
@@ -154,12 +154,115 @@
             margin-bottom: 50px;
         }
 
+        @media only screen and (min-width: 601px) {
+
+            .mobile-view,
+            .rightm {
+                display: none;
+            }
+
+
+        }
+
+        @media only screen and (max-width: 600px) {
+
+
+            .mobile-view {
+                text-align: center;
+                justify-content: center;
+                height: 50px;
+                padding: 12px 0px;
+                position: fixed;
+                width: 100%;
+                background-color: black;
+                color: gold;
+                font-family: Gill Sans;
+                font-size: 1em;
+                /* z-index: 99; */
+            }
+
+            .right,
+            .left {
+                display: none;
+            }
+
+            .rightm {
+                height: auto;
+                width: 100%;
+                justify-content: space-around;
+                align-items: center;
+                position: fixed;
+                padding: 8px 0;
+                margin-top: 50px;
+                background-color: black;
+                color: aliceblue;
+                font-family: Gill Sans;
+                font-size: .7em;
+                /* z-index: 98; */
+            }
+
+            .rightm a {
+                text-decoration: none;
+                color: aliceblue;
+            }
+
+            .rightm ul {
+                display: flex;
+                justify-content: space-around;
+                margin-right: 25px;
+                align-items: center;
+            }
+
+            .rightm ul li {
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                padding: 0px 10px;
+            }
+
+            .container {
+                padding-left: 40px;
+                padding-right: 40px;
+                margin-top: 10px;
+            }
+
+            .container h1 {
+                display: none;
+            }
+
+            .abh001 {
+                font-size: 2rem;
+                align-content: center;
+                color: aliceblue;
+                background: #d3d3d3;
+                margin-top: 20px;
+                margin-bottom: 10px;
+                text-align: center;
+                height: auto;
+                width: 70%;
+                border-radius: 0px 40px 40px 0;
+            }
+        }
     </style>
     <link rel="icon" type="image/png" href="bg/icon.png">
 </head>
 
 <body>
     <header>
+
+        <div class="mobile-view">
+            <h1>VK SHOTZ</h1>
+        </div>
+
+        <div class="rightm">
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="vk_wallz.html" target="_blank">VK Wallz</a></li>
+                <li><a href="vk_vidz.html" target="_blank">VK Clipz</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </div>
+
         <nav>
             <a href="main.html">
                 <div class="left">VK SHOTZ</div>
@@ -190,27 +293,41 @@
         <h1 class="headwhat"></h1>
 
 
-        1. <b>Welcome to VK SHOTZ:</b>  VK SHOTZ is your ultimate destination for stunning and free mobile-shots, designed to enhance your digital experience. <br> <br>
-        
-        2. <b>Quality Mobile Photography:</b>  We specialize in curating a diverse collection of photographs captured exclusively using mobile devices, showcasing the remarkable potential of smartphone photography. <br> <br>
-        
-        3. <b>Free of Charge:</b>  At VK SHOTZ, we believe that beauty should be accessible to all. That's why all our photographs are available completely free of charge. <br> <br>
-        
-        4. <b>Wide Range of Categories:</b>  Explore our extensive library of photographs, organized into various categories, including nature, architecture, landscapes, abstract art, and more. There's something for everyone. <br> <br>
-        
-        5. <b>Fresh Content Regularly:</b>  We regularly update our collection to keep your screens looking fresh and vibrant. You'll never run out of options. <br> <br>
-        
-        6. <b>User-Friendly Platform:</b>  Our user-friendly website and mobile app make it easy to browse, search, and download wallpapers in just a few clicks or taps. <br> <br>
-        
-        7. <b>Customization Options:</b>  We offer images in multiple resolutions, ensuring a perfect fit for your device, whether it's a smartphone, tablet, or computer. <br> <br>
-        
-        8. <b>Community Engagement:</b>  Join our vibrant community of photographers and wallpaper enthusiasts. Share your feedback, submit your own mobile shots, and connect with like-minded individuals who appreciate the art of mobile photography. <br> <br>
-        
-        9. <b>No Watermarks or Ads:</b>  VK SHOTZ photographs come without watermarks or intrusive ads, guaranteeing a clean and uninterrupted visual experience. <br> <br>
-        
-        10. <b>Supporting Creativity:</b>  VK SHOTZ is not just about providing photographs; it's about celebrating the creativity of mobile photographers worldwide. We're here to inspire, share, and beautify your digital world with our mobile-shot masterpieces. <br>  <br><br><br>
-        
-        Discover the beauty of mobile photography with VK SHOTZ and transform your screens into works of art today. Join our community, and let your devices tell a story through our captivating Photography. <br>
+        1. <b>Welcome to VK SHOTZ:</b> VK SHOTZ is your ultimate destination for stunning and free mobile-shots,
+        designed to enhance your digital experience. <br> <br>
+
+        2. <b>Quality Mobile Photography:</b> We specialize in curating a diverse collection of photographs captured
+        exclusively using mobile devices, showcasing the remarkable potential of smartphone photography. <br> <br>
+
+        3. <b>Free of Charge:</b> At VK SHOTZ, we believe that beauty should be accessible to all. That's why all our
+        photographs are available completely free of charge. <br> <br>
+
+        4. <b>Wide Range of Categories:</b> Explore our extensive library of photographs, organized into various
+        categories, including nature, architecture, landscapes, abstract art, and more. There's something for everyone.
+        <br> <br>
+
+        5. <b>Fresh Content Regularly:</b> We regularly update our collection to keep your screens looking fresh and
+        vibrant. You'll never run out of options. <br> <br>
+
+        6. <b>User-Friendly Platform:</b> Our user-friendly website and mobile app make it easy to browse, search, and
+        download wallpapers in just a few clicks or taps. <br> <br>
+
+        7. <b>Customization Options:</b> We offer images in multiple resolutions, ensuring a perfect fit for your
+        device, whether it's a smartphone, tablet, or computer. <br> <br>
+
+        8. <b>Community Engagement:</b> Join our vibrant community of photographers and wallpaper enthusiasts. Share
+        your feedback, submit your own mobile shots, and connect with like-minded individuals who appreciate the art of
+        mobile photography. <br> <br>
+
+        9. <b>No Watermarks or Ads:</b> VK SHOTZ photographs come without watermarks or intrusive ads, guaranteeing a
+        clean and uninterrupted visual experience. <br> <br>
+
+        10. <b>Supporting Creativity:</b> VK SHOTZ is not just about providing photographs; it's about celebrating the
+        creativity of mobile photographers worldwide. We're here to inspire, share, and beautify your digital world with
+        our mobile-shot masterpieces. <br> <br><br><br>
+
+        Discover the beauty of mobile photography with VK SHOTZ and transform your screens into works of art today. Join
+        our community, and let your devices tell a story through our captivating Photography. <br>
 
     </section>
     <footer>
@@ -230,7 +347,9 @@
             </div>
         </nav>
 
-        <p>&copy; 2023 VK_SHOTZ. All rights reserved.</p>
+        <center>
+            <p>&copy; 2023 VK_SHOTZ. All rights reserved.</p>
+        </center>
 
     </footer>
 

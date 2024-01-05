@@ -13,7 +13,7 @@
     <style>
         body {
             font-family: poppins;
-            background-color: rgb(128, 128, 128);
+            background-color: #d3d3d3;
             margin: 0;
             padding: 0;
         }
@@ -23,7 +23,8 @@
             justify-content: space-around;
             align-items: center;
             height: 120px;
-            background-color: #6e6e6e;
+            color: rgb(74, 44, 31);
+            background-color: #d3d3d3;
             text-decoration: none;
 
         }
@@ -46,6 +47,7 @@
             box-shadow: 2px 2px 5px goldenrod;
             text-shadow: 2px 2px 5px black;
         }
+
         a {
             color: rgb(74, 44, 31);
             text-decoration: none;
@@ -54,7 +56,7 @@
         .container {
             background-color: #d3d3d3;
             padding: 30px;
-            font-size: 1.5em;
+            font-size: 1em;
         }
 
         h1 {
@@ -66,7 +68,8 @@
             text-align: justify;
             line-height: 1.6;
         }
-        #abo{
+
+        #abo {
             font-size: 1.8em;
             font-family: 'Times New Roman', Times, serif;
         }
@@ -87,7 +90,7 @@
             margin-bottom: 20px;
             margin-left: 50px;
             margin-right: 50px;
-            background-color: rgb(101, 101, 101);
+            background-color: #d3d3d3;
             box-shadow: 8px 8px 6px rgb(45, 44, 44);
 
         }
@@ -96,7 +99,7 @@
             max-width: 100%;
             display: block;
             /* border-radius: 10px; */
-            
+
         }
 
         .myweb-item h3 {
@@ -133,7 +136,8 @@
         #social {
             font-size: 2em;
             font-family: monospace;
-            border: 2px solid rgb(50, 16, 16);
+            background: #d3d3d3;
+            /* border: 2px solid rgb(50, 16, 16); */
             border-bottom: none;
             border-left: none;
             border-right: none;
@@ -143,7 +147,7 @@
 
         .social-media {
             display: flex;
-            border: 2px solid rgb(50, 16, 16);
+            /* border: 2px solid rgb(50, 16, 16); */
             justify-content: space-around;
             border-top: none;
             border-left: none;
@@ -151,38 +155,159 @@
             margin-top: 40px;
             margin-bottom: 50px;
         }
-        
+
+
+
+        @media only screen and (min-width: 601px) {
+
+            .mobile-view,
+            .rightm,
+            .abh001 {
+                display: none;
+            }
+
+
+        }
+
+        @media only screen and (max-width: 600px) {
+
+
+            .mobile-view {
+                text-align: center;
+                height: auto;
+                padding: 0px 0px;
+                position: fixed;
+                width: 100%;
+                background-color: black;
+                color: gold;
+                font-family: Gill Sans;
+                font-size: 1em;
+                /* z-index: 99; */
+            }
+
+            .right,
+            .left {
+                display: none;
+            }
+
+            .rightm {
+                height: auto;
+                width: 100%;
+                justify-content: space-around;
+                align-items: center;
+                position: fixed;
+                margin-top: 55px;
+                background-color: black;
+                color: aliceblue;
+                font-family: Gill Sans;
+                font-size: .7em;
+                /* z-index: 98; */
+            }
+
+            .rightm a {
+                text-decoration: none;
+                color: aliceblue;
+            }
+
+            .rightm ul {
+                display: flex;
+                justify-content: space-around;
+                margin-right: 25px;
+                align-items: center;
+            }
+
+            .rightm ul li {
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                padding: 0px 10px;
+            }
+
+            .container {
+                padding-left: 40px;
+                padding-right: 40px;
+                margin-top: 10px;
+            }
+
+            .container h1 {
+                display: none;
+            }
+
+            .abh001 {
+                font-size: 2rem;
+                align-content: center;
+                color: aliceblue;
+                background: rgb(52, 52, 52);
+                margin-top: 20px;
+                margin-bottom: 10px;
+                text-align: center;
+                height: auto;
+                width: 70%;
+                border-radius: 0px 40px 40px 0;
+            }
+
+        }
     </style>
     <link rel="icon" type="image/png" href="bg/icon.png">
 </head>
 
 <body>
     <header>
+
+        <div class="mobile-view">
+            <h1>VK SHOTZ</h1>
+        </div>
+
+        <div class="rightm">
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="vk_wallz.html" target="_blank">VK Wallz</a></li>
+                <li><a href="vk_vidz.html" target="_blank">VK Clipz</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </div>
+
+
         <nav>
-            <a href="main.html"><div class="left">VK SHOTZ</div></a> 
+            <a href="main.html">
+                <div class="left">VK SHOTZ</div>
+            </a>
             <div class="right">
                 <ul>
                     <li><a href="main.html">Home</a></li>
                     <li><a href="vk_wallz.html" target="_blank">VK Wallz</a></li>
                     <li><a href="vk_vidz.html" target="_blank">VK Clipz</a></li>
-                    <li><a href="about.html" >About Us</a></li>
+                    <li><a href="about.html">About Us</a></li>
                 </ul>
             </div>
-        </nav> 
+        </nav>
     </header>
+    <h1 class="abh001"> About Us</h1>
     <div class="container">
-        <h1>About Us</h1>
-        <p>Welcome to <span id="abo">VK SHOTZ</span>, your ultimate destination for breathtaking self-clicked mobile photography shots and videos! Established in 2023, VK SHOTZ was born out of our passion for capturing the beauty of the world through our lenses.</p>
+        <h1> About Us</h1>
+        <p>Welcome to <span id="abo">VK SHOTZ</span>, your ultimate destination for breathtaking self-clicked mobile
+            photography shots and videos! Established in 2023, VK SHOTZ was born out of our passion for capturing the
+            beauty of the world through our lenses.</p>
 
-        <p>At VK SHOTZ, we believe that the best camera is the one that's always with you, and that's why we focus exclusively on showcasing stunning visuals captured using mobile devices. Our team of talented photographers and videographers are constantly exploring the world, seeking out hidden gems, and capturing mesmerizing moments to share with you.</p>
+        <p>At VK SHOTZ, we believe that the best camera is the one that's always with you, and that's why we focus
+            exclusively on showcasing stunning visuals captured using mobile devices. Our team of talented photographers
+            and videographers are constantly exploring the world, seeking out hidden gems, and capturing mesmerizing
+            moments to share with you.</p>
 
-        <p>We take pride in curating a diverse collection of landscapes, portraits, and everything in between. From awe-inspiring sunsets and majestic mountains to heartwarming portraits and candid street scenes, our gallery boasts a rich tapestry of artistry.</p>
+        <p>We take pride in curating a diverse collection of landscapes, portraits, and everything in between. From
+            awe-inspiring sunsets and majestic mountains to heartwarming portraits and candid street scenes, our gallery
+            boasts a rich tapestry of artistry.</p>
 
-        <p>Our platform serves as a vibrant community for budding mobile photographers and videographers to share their unique perspectives. We encourage creativity, exploration, and the freedom to experiment with the power of mobile photography.</p>
+        <p>Our platform serves as a vibrant community for budding mobile photographers and videographers to share their
+            unique perspectives. We encourage creativity, exploration, and the freedom to experiment with the power of
+            mobile photography.</p>
 
-        <p>Join us on this visual journey and immerse yourself in the magic of mobile photography. Whether you're an aspiring photographer or simply a lover of art and nature, VK SHOTZ promises to be a place of inspiration, wonder, and discovery.</p>
+        <p>Join us on this visual journey and immerse yourself in the magic of mobile photography. Whether you're an
+            aspiring photographer or simply a lover of art and nature, VK SHOTZ promises to be a place of inspiration,
+            wonder, and discovery.</p>
 
-        <p>Thank you for being a part of our growing community. Together, let's celebrate the beauty of the world, one shot at a time.</p>
+        <p>Thank you for being a part of our growing community. Together, let's celebrate the beauty of the world, one
+            shot at a time.</p>
     </div>
 
     <footer>
@@ -192,7 +317,8 @@
             </center>
             <div class="social-media">
                 <a href="https://instagram.com" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.youtube.com/@vk_shotz/featured" target="_blank" title="Youtube"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.youtube.com/@vk_shotz/featured" target="_blank" title="Youtube"><i
+                        class="fab fa-youtube"></i></a>
                 <a href="https://facebook.com" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
                 <a href="https://twitter.com" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
                 <a href="mailto:vkshotz@gmail.com" target="_blank" title="Mail"><i class="fas fa-envelope"></i></a>
@@ -201,7 +327,10 @@
             </div>
         </nav>
 
-        <p>&copy; 2023 VK_SHOTZ. All rights reserved.</p>
+        <center>
+            <p>&copy; 2023 VK_SHOTZ. All rights reserved.</p>
+        </center>
+
 
     </footer>
 
