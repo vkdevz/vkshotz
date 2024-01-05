@@ -20,7 +20,8 @@ header nav {
     text-decoration: none;
 
 }
-header nav a{
+
+header nav a {
     text-decoration: none;
     color: #f2f2f2;
 }
@@ -98,7 +99,7 @@ header nav ul li {
 }
 
 
-    
+
 
 
 
@@ -230,4 +231,92 @@ header nav ul li {
 .page-number.active+a+a {
     /* Show active page number and the adjacent two page numbers */
     display: inline-block;
+}
+
+/*************************---- Reaponsive for Mobile ----************************/
+
+
+@media only screen and (min-width: 601px) {
+
+    .mobile-view {
+        display: none;
+    }
+}
+
+
+/*************************---- Reaponsive for Mobile ----************************/
+
+
+@media only screen and (max-width: 600px) {
+
+
+
+    .left {
+        position: absolute;
+        font-size: 2em;
+        font-family: 'Times New Roman', Times, serif;
+        padding: 5px;
+        margin-top: -39px;
+        margin-left: -78px;
+        margin-right: 10px;
+        box-shadow: 2px 2px 5px goldenrod;
+        text-shadow: 2px 2px 5px black;
+        /* z-index: 99; */
+    }
+
+    .right {
+        /* height: 30px; */
+        position: absolute;
+        margin-top: 75px;
+        padding: 5px 0px;
+        background-color: black;
+        color: gold;
+        font-family: Gill Sans;
+        font-size: .5em;
+        /* z-index: 98; */
+    }
+
+    header nav {
+        display: flex;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        justify-content: space-around;
+        align-items: center;
+        height: 100px;
+        margin-top: 0px;
+        background-color:grey;
+        text-decoration: none;
+
+    }
+
+    .heading {
+        font-size: 1.4em;
+        color: aliceblue;
+        background: rgb(52, 52, 52);
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-left: 0px;
+        align-content: center;
+        text-align: center;
+        height: 40px;
+        width: 95%;
+        border-radius: 0px 40px 40px 0;
+    }
+
+    .image-container img {
+        height: 250px;
+        width: max-content;
+        /* border: 1px solid #ccc; */
+        /* padding: 10px; */
+        margin-top: 1px;
+        box-shadow: 12px 12px 10px rgb(33, 24, 1);
+    }
+
+    .image-name {
+        font-size: 1.4em;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        padding: 5px 10px;
+        border-radius: 5px;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
 }
